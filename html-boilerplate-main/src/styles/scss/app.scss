@@ -1,18 +1,64 @@
-@function rem($value) {
-  $result: ($value / $rem-base) * 1rem;
+/* Colors */
+$white: #fff;
+$semi-white: #d7ccc0;
+$light: #f5f4f0;
+$main-color-light: #fe8a02;
+$main-color-dark: #42413c;
+$dark: #2a2626;
+$semi-dark: #908d8b;
+$additional-first: #b09a81;
+$additional-second: #1085c5;
 
-  @return #{$result};
+/* Fonts */
+body {
+  font-family:'Open Sans', 'Times New Roman', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: $dark;
+  margin: 0;
 }
 
 h1,
-.h1 {
-  font-size: rem(30px);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neucha', 'Times New Roman', sans-serif;
+  line-height: 1.2em;
+}
 
-  @include media("md") {
-    font-size: rem(45px);
-  }
+h1 {
+  font-size: 72px;
+  margin: 0;
+}
 
-  @include media("lg") {
-    font-size: rem(60px);
-  }
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin: 100px 0;
+}
+
+
+.header {
+  position: relative;
+  min-height: 215px;
+  background-color: $main-color-light;
+}
+
+.title {
+  font-family: "Open Sans";
+  position: absolute;
+  color: $white;
+  top: 50px;
+  left: 150px;
+  line-height: 160%;
 }
